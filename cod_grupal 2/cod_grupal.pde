@@ -2,7 +2,7 @@ Gato miGato;
 color colorFondo;
 
 void setup () {
-  size(1000, 1000);
+  size(3000, 3000);
   miGato = new Gato(#FF03E6, 500,500);
   colorFondo = color(255);
   
