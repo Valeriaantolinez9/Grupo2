@@ -1,0 +1,18 @@
+Gato miGato;
+color colorFondo;
+
+void setup () {
+  size(1000, 1000);
+  miGato = new Gato(#FF03E6, 500,500);
+  colorFondo = color(255);
+  
+}
+
+void draw () {
+  background(colorFondo);
+  miGato.mostrar();
+  miGato.correr();
+
+}
+
+//cambio 3 valeria
