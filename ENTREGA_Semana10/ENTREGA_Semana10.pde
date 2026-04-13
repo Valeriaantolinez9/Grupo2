@@ -76,7 +76,14 @@ void mousePressed() {
   if (mouseX>60&&mouseX<90&&mouseY>150&&mouseY<height-30) {dragS=true; s=map(mouseY,150,height-30,0,255); ui=true;}
 
   for (int i=0;i<4;i++) {
-    if (dist(mouseX,mouseY,65+i*90,70)<40) {herramienta=i; ui=true;}
+    if (dist(mouseX,mouseY,65+i*90,70)<40) {
+      herramienta=i; 
+      ui=true;
+      //Si el boton es limpiar
+      if( i == 3){
+        formas.clear();
+      }
+    }
   }
 
   if (herramienta==2) {
